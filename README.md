@@ -11,16 +11,25 @@ All credits go to Hiroki Kokubun [cocopon](https://github.com/cocopon) for creat
 
 ## Installation 
 
-With packer.nvim
+With [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use "https://github.com/harg/iceberg.nvim"
+use "harg/iceberg.nvim"
 ```
 
 ## Usage
 
-Add to your nvim/init.lua
-
+Enable the colorscheme:
 ```lua
 vim.cmd.colorscheme("iceberg")
+```
+Enable the colorscheme in your lualine config:
+```lua
+require('lualine').setup {
+  options = {
+    -- ... your lualine config
+    theme = 'iceberg'
+    -- ... your lualine config
+  }
+}
 ```
